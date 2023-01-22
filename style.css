@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 100;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+.container{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    padding-left: 80px;
+}
+ div ul li{
+    height: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    color: silver;
+}
+.logo{
+    color: silver;
+}
+a:hover{
+    color: white;
+    font-weight: bolder;
+}
+a::after{
+    content:'';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 1s;
+}
+a:hover:after{
+    width: 100%;
+    transition: width 1s;
+}
+.logo:hover{
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: all;
+}
+.cardcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+}
+.card{
+    width: 600px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 20px;
+    background-color:#fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 2px rgba(20, 20, 20, 0);
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(175, 254, 255);
+    background-image:url(./IMAGE/hero__ecv967jz1y82_large.jpg);
+}
+footer{
+    background-color: rgb(106, 106, 106);
+    color: rgb(255, 248, 248);
+    padding: 20px;
+}
